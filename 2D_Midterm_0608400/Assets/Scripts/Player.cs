@@ -55,15 +55,17 @@ public class Player : MonoBehaviour
         
         float h = joystick.Horizontal;
         float v = joystick.Vertical;
-       
 
+        
         //變形元件,位移(水平*速度*一幀的時間,垂直*速度*一幀的時間,0)
         tra.Translate(h*speed*Time.deltaTime,v*speed*Time.deltaTime, 0);
 
+        
         ani.SetFloat("水平", h);
         ani.SetFloat("垂直", v);
 
-    }
+
+}
     //要被按鈕呼叫必須設定為公開 public
     public void Attack()
     {
