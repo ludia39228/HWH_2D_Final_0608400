@@ -101,9 +101,9 @@ public class Player : MonoBehaviour
         Move();
 
     }
-    [Header("吃金塊音效")]
+    [Header("吃橘子音效")]
     public AudioClip soundEat;
-    [Header("金幣數量")]
+    [Header("橘子數量")]
     public Text textCoin;
 
 
@@ -113,12 +113,12 @@ public class Player : MonoBehaviour
     //觸發事件-進入:兩個物件必須有一個勾選 Is Trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "金塊")
+        if(collision.tag == "橘子")
         { 
         coin++;
         aud.PlayOneShot(soundEat);
         Destroy(collision.gameObject);
-        textCoin.text = "金幣:" + coin;
+        textCoin.text = "橘子:" + coin;
         }
     }
 }
