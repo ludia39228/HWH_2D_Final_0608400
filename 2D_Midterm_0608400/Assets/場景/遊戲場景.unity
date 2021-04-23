@@ -6798,7 +6798,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &1538380241
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7514,7 +7514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007807081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.34, y: -1.52, z: 0}
+  m_LocalPosition: {x: -4.82, y: -1.52, z: 0}
   m_LocalScale: {x: 3.2871675, y: 3.2871675, z: 3.2871675}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7556,7 +7556,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1001 &2037559169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7734,7 +7734,7 @@ PrefabInstance:
     - target: {fileID: 3711418667712289376, guid: ae2e481066c04484ab329f4e6a077fdf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.4352856
+      value: 6.09
       objectReference: {fileID: 0}
     - target: {fileID: 3711418667712289376, guid: ae2e481066c04484ab329f4e6a077fdf,
         type: 3}
@@ -7894,6 +7894,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146321772776187519, guid: 416ff212c58dcb04f8fb84bcbb423027,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 416ff212c58dcb04f8fb84bcbb423027, type: 3}
