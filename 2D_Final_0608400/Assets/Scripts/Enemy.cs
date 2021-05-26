@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     public float cdAttack = 3;
     [Header("攻擊力"), Range(0, 1000)]
     public float attack = 20;
-
+ 
     // [Header("經驗值"), Range(0, 10000)]
     // public float exp = 30;
 
@@ -91,16 +91,14 @@ public class Enemy : MonoBehaviour
         timer += Time.deltaTime;  //累加時間
 
         //如果 計時器 大於等於 冷卻時間 就攻擊
-        if(timer>=cdAttack)
+        if (timer >= cdAttack)
         {
             timer = 0;        //計時器 歸零 
             psAttack.Play();  //播放 攻擊特效
             //2D碰撞=2D物理.覆蓋圖形範圍(中心點,半徑,圖層)
-            Collider2D hit =Physics2D.OverlapCircle(transform.position, rangeAttack,1<<9);
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, rangeAttack, 1 << 9);
             //碰到的物件 取得元件<玩家>().受傷(攻擊力)
             hit.GetComponent<Player>().Hit(attack);
-                       
-
         }
 
     }

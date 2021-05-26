@@ -92,12 +92,10 @@ public class Player : MonoBehaviour
         RaycastHit2D hit =Physics2D.CircleCast(transform.position, rangeAttack, -transform.up,0,1<<8);
 
         //如果 碰到物件存在 並且 碰到的物件 標籤 為道具 就取得道具腳本並呼叫掉落道具方法
-        if (hit && hit.collider.tag == "道具") hit.collider.GetComponent<Item>().DropProp();
+        // if (hit && hit.collider.tag == "道具") hit.collider.GetComponent<Item>().DropProp();
         //如果 打到的標籤是敵人 就對他造成傷害
         if (hit && hit.collider.tag == "敵人") hit.collider.GetComponent<Enemy>().Hit(attack);
-
-        
-
+       
 
     }
     //要被其他腳本呼叫也要設定為公開
@@ -121,6 +119,16 @@ public class Player : MonoBehaviour
         hp = 0;
         isDead = true;
         Invoke("Replay", 2);                       //延遲呼叫("方法名稱",延遲時間)
+    }
+
+    //事件-特定時間會執行的方法
+    //開始事件：撥放後執行一次
+    /// <summary>
+    /// 重新遊戲
+    /// </summary>
+    private void Replay()
+    {
+        SceneManager.LoadScene("遊戲場景");
     }
 
     //事件-特定時間會執行的方法

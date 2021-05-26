@@ -29,7 +29,7 @@ public class HpManager : MonoBehaviour
 
         while(y<400)                                               //當Y小於400時持續執行
         {
-            y += 20;                                               //每次上升的單位20
+            y += 15;                                               //每次上升的單位20
             rect.anchoredPosition= new Vector2(0, y);              //更新座標
             yield return new WaitForSeconds(0.02f);                //等待幾秒(秒數)
         }
