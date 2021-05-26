@@ -9,15 +9,16 @@ public class Enemy : MonoBehaviour
     public float speed = 2;
     [Header("攻擊範圍"), Range(0, 50)]
     public float rangeAttack = 0.5f;
-    [Header("攻擊特效")]
+   [Header("攻擊特效")]
     public ParticleSystem psAttack;
     [Header("攻擊冷卻時間"), Range(0, 10)]
     public float cdAttack = 3;
     [Header("攻擊力"), Range(0, 1000)]
     public float attack = 20;
-   // [Header("經驗值"), Range(0, 10000)]
-   // public float exp = 30;
-    
+
+    // [Header("經驗值"), Range(0, 10000)]
+    // public float exp = 30;
+
 
     private Transform player;
     private Player _player;
@@ -59,7 +60,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        //Move();
+        Track();
     }
 
     /// <summary>
@@ -122,7 +123,7 @@ public class Enemy : MonoBehaviour
         if (isDead) return;                             //如果 死亡 就退出
         hp = 0;
         isDead = true;
-        Destroy(gameObject,1.5f);                       //延遲呼叫("方法名稱",延遲時間)
+        Destroy(gameObject,1f);                       //延遲呼叫("方法名稱",延遲時間)
        // _player.Exp(exp);                               //將經驗值傳給玩家
     }
 
