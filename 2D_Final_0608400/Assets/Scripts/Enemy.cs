@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+
 public class Enemy : MonoBehaviour
 {
     [Header("追蹤範圍"), Range(0, 500)]
@@ -32,7 +33,7 @@ public class Enemy : MonoBehaviour
     
     private bool isDead = false;
     private float hpMax;
-
+    
 
     private void Start()
     {
@@ -96,7 +97,7 @@ public class Enemy : MonoBehaviour
             //2D碰撞=2D物理.覆蓋圖形範圍(中心點,半徑,圖層)
             Collider2D hit =Physics2D.OverlapCircle(transform.position, rangeAttack,1<<9);
             //碰到的物件 取得元件<玩家>().受傷(攻擊力)
-           //hit.GetComponent<Player>().hit(attack);
+            hit.GetComponent<Player>().Hit(attack);
         }
         
     }
