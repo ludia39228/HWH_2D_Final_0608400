@@ -99,8 +99,10 @@ public class Enemy : MonoBehaviour
             Collider2D hit =Physics2D.OverlapCircle(transform.position, rangeAttack,1<<9);
             //碰到的物件 取得元件<玩家>().受傷(攻擊力)
             hit.GetComponent<Player>().Hit(attack);
+                       
+
         }
-        
+
     }
 
     /// <summary>
