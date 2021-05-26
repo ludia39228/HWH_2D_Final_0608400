@@ -368,6 +368,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7799729536473468933, guid: bfb5af02563800f418aa9daf7c815a5e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 7799729536473468933, guid: bfb5af02563800f418aa9daf7c815a5e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7799729537208951752, guid: bfb5af02563800f418aa9daf7c815a5e,
         type: 3}
       propertyPath: m_Layer
@@ -9349,7 +9359,7 @@ PrefabInstance:
     - target: {fileID: 644728446853088109, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
       propertyPath: rangeTrack
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 644728446853088109, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
@@ -9374,7 +9384,7 @@ PrefabInstance:
     - target: {fileID: 644728446853088109, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
       propertyPath: rangeAttack
-      value: 1.4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 644728446853088109, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
@@ -9410,7 +9420,7 @@ PrefabInstance:
     - target: {fileID: 644728446853088111, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.2877283
+      value: -4.29
       objectReference: {fileID: 0}
     - target: {fileID: 644728446853088111, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
@@ -9515,12 +9525,27 @@ PrefabInstance:
     - target: {fileID: 7263388842724016841, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.01935625
+      value: 0.15566039
       objectReference: {fileID: 0}
     - target: {fileID: 7263388842724016841, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263388842724016841, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4161664
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263388842939412762, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263388842939412762, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7263388843037241871, guid: 3d4ccefaa957e464d84ebc4ca0c236ad,
         type: 3}
@@ -9766,8 +9791,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 3
-      minScalar: 1
+      scalar: 2.5
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14472,7 +14497,7 @@ MonoBehaviour:
   joystick: {fileID: 821085888}
   tra: {fileID: 1538380236}
   ani: {fileID: 1538380237}
-  rangeAttack: 1.2
+  rangeAttack: 1.5
   aud: {fileID: 1538380241}
   soundAttack: {fileID: 8300000, guid: a17c183744d7cf345bb789e335a4cc2e, type: 3}
   attack: 50
