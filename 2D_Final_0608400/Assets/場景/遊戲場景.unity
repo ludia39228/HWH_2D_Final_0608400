@@ -8106,7 +8106,7 @@ MonoBehaviour:
   Lv: 1
   speed: 6
   isDead: 0
-  cName: "\u8C93\u54AA"
+  cName: Dream
   joystick: {fileID: 821085888}
   tra: {fileID: 1538380236}
   ani: {fileID: 1538380237}
